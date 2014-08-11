@@ -2,6 +2,7 @@
 <manifest>
   <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
   <remote name="membase"   fetch="git://github.com/membase/"   review="review.couchbase.org" />
+  <remote name="vmx"   fetch="git://github.com/vmx/" />
 
   <default remote="couchbase" revision="master" />
 
@@ -12,11 +13,11 @@
   <project name="couchdbx-app"            revision="3.0.0"         />
   <project name="couchstore"              />
   <project name="ep-engine"               />
-  <project name="geocouch"                />
+  <project name="geocouch"                revision="tmp-rebase-newvtree" remote="vmx"/>
   <project name="healthchecker"           />
   <project name="memcached"               revision="3.0" remote="membase" />
   <project name="moxi"                    />
-  <project name="ns_server"               />
+  <project name="ns_server"               revision="tmp-rebase-newvtree" remote="vmx"/>
   <project name="platform"                />
   <project name="sigar"                   />
   <project name="testrunner"              />
