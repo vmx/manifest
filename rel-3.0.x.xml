@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="couchbase" fetch="git://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="vmx" fetch="git://github.com/vmx/"/>
 
   <default remote="couchbase" revision="master" />
 
@@ -43,7 +44,7 @@
   <project name="testrunner"              revision="20761a815238b404cae51a9337219bee673fda7c" />
 
   <!-- tlm uses 3.0.0 branch -->
-  <project name="tlm"                     revision="3.0.0">
+  <project name="tlm"                     revision="change-52592" remote="vmx">
     <copyfile src="GNUmakefile"    dest="GNUmakefile"    />
     <copyfile src="Makefile"       dest="Makefile"       />
     <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
