@@ -5,6 +5,7 @@
   <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/"     review="review.couchbase.org" />
   <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/"     review="review.couchbase.org" />
   <remote name="blevesearch"   fetch="git://github.com/blevesearch/" />
+  <remote name="vmx"   fetch="git://github.com/vmx/" />
 
   <default remote="couchbase" revision="master" />
 
@@ -26,7 +27,7 @@
   <project name="indexing"  path="goproj/src/github.com/couchbase/indexing"/>
   <project name="memcached" groups="kv"/>
   <project name="moxi" groups="kv"/>
-  <project name="ns_server"/>
+  <project name="ns_server" remote="vmx" revision="win-views-cv"/>
   <project name="platform" groups="kv"/>
   <project name="query"     path="goproj/src/github.com/couchbase/query"/>
   <project name="query-ui"/>
@@ -91,7 +92,7 @@
   <project name="googletest"     remote="couchbasedeps" revision="f397fa5ec6365329b2e82eb2d8c03a7897bbefb5" groups="kv"/>
 
   <!-- Couchbase internal build infrastructure -->
-  <project name="build"      path="cbbuild"           groups="notdefault,build">
+  <project name="build"      path="cbbuild"           groups="notdefault,build" remote="vmx" revision="win-views-cv">
     <annotation name="VERSION" value="0.0.0"     keep="true"/>
     <annotation name="BLD_NUM" value="@BLD_NUM@" keep="true"/>
     <annotation name="RELEASE" value="@RELEASE@" keep="true"/>
